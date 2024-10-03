@@ -1,37 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Monster Game</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Jagma World</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-color: #FF3B30;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+        .centered-button {
+            background-color: white;
+            border-radius: 50%;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .centered-button:hover {
+            transform: scale(1.1);
+        }
+        .centered-button img {
+            width: 150px;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
-    <div class="game-container">
-        <!-- Header with Energy and Team Info -->
-        <header>
-            <div class="energy">
-                <p>Energy: <span id="energy">100</span>/100</p>
-            </div>
-            <div class="team">
-                <p>Team: <span id="team-info">Select your monsters!</span></p>
-            </div>
-        </header>
-
-        <!-- Map with levels -->
-        <div class="map">
-            <div class="level" id="level-1">Level 1</div>
-            <div class="level locked" id="level-2">Level 2</div>
-            <div class="level locked" id="level-3">Level 3</div>
-        </div>
-
-        <!-- Capture Results -->
-        <div id="capture-result"></div>
-
-        <!-- Capture Monsters Button -->
-        <button id="battle-button">Battle and Capture</button>
+    <div class="centered-button" onclick="window.location.href=#">
+        <img src="https://i.imgur.com/W9gIbW8.png" alt="Jagma World">
     </div>
-
-    <script src="game.js"></script>
 </body>
 </html>
